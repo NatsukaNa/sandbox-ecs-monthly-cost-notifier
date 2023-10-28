@@ -1,8 +1,8 @@
 FROM python:3.11.6-slim
 
 # pipコマンドをZscaler配下で実行するための証明書設定
-ADD ZscalerRootCertificate-2048-SHA256.crt /usr/local/share/ca-certificates/ZscalerRootCertificate-2048-SHA256.crt
-ENV REQUESTS_CA_BUNDLE /usr/local/share/ca-certificates/ZscalerRootCertificate-2048-SHA256.crt
+# ADD ZscalerRootCertificate-2048-SHA256.crt /usr/local/share/ca-certificates/ZscalerRootCertificate-2048-SHA256.crt
+# ENV REQUESTS_CA_BUNDLE /usr/local/share/ca-certificates/ZscalerRootCertificate-2048-SHA256.crt
 
 # poetryをインストールし、依存関係を解決する
 RUN pip install poetry
