@@ -13,7 +13,7 @@ RUN poetry install
 
 # 実行ファイル配置とデフォルト環境変数を設定する
 COPY main.py main.py
-ENV MATTERMOST_CHANNEL  "test_natsuka_nakajima"
+ENV MATTERMOST_CHANNEL  "team-fy2023"
 ENV MATTERMOST_WEBHOOK_URL "https://mattermost.paylab.sh/hooks/e7g1es1k838c3pxkqmaxb8nsjy"
 
 CMD ["poetry", "run", "python" ,"-c", "import main; main.lambda_handler({}, {})"]
