@@ -1,4 +1,4 @@
-FROM python:3.11.6-slim
+FROM python:3.14.0-slim
 
 # pipコマンドをZscaler配下で実行するための証明書設定
 # ADD ZscalerRootCertificate-2048-SHA256.crt /usr/local/share/ca-certificates/ZscalerRootCertificate-2048-SHA256.crt
